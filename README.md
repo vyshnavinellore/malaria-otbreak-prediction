@@ -1,0 +1,1 @@
+# malaria-otbreak-prediction
