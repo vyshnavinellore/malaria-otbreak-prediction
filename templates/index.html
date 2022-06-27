@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MALARIA OUTBREAK</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <!-- <div class="box"> -->
+    <h1> 🦟 THE MALARIA OUTBREAK 🦟 </h1>
+    <!-- </div> -->
+
+    <!-- <div class="box"> -->
+    <center>
+    <form action="/predict" method="post">
+        <table>
+            <tr>
+                <td>
+                    <label for="maxTemp">maxTemp </label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="number" id="maxTemp" name="maxTemp" placeholder="Enter maxTemp" min=0 />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="minTemp">minTemp </label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="number" id="minTemp" name="minTemp" placeholder="Enter minTemp " min="0" />
+                </td>
+        </tr>
+          <tr>
+                <td>
+                    <label for="avgHumidity">avgHumidity </label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="float" id="avgHumidity" name="avgHumidity" placeholder="Enter avgHumidity" min=0 />
+                </td>
+            </tr>
+           <tr>
+                <td>
+                    <label for="Rainfall">Rainfall </label>
+                </td>
+                <td>:</td>
+                <td>
+                    <input type="float" id="Rainfall" name="Rainfall" placeholder="Enter Rainfall" min=0 />
+                </td>
+            </tr>
+
+        <tr>
+            <td colspan="3">
+                <input id="btn" type="submit" value="Predict" >
+            </td>
+        </tr>
+        </table>
+        <p>Prediction : {{pred}}</p>
+    </form>
+    </center>
+<!-- </div> -->
+</body>
+</html>
